@@ -75,7 +75,7 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.showcase-top a {
+.btn-sign-in a {
   position: absolute;
   top: 20%;
   right: 0;
