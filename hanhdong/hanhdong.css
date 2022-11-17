@@ -1,0 +1,41 @@
+tbody {
+   float: left;
+   
+}
+tbody .phim td{
+    float: left;
+    padding: 8px;
+    
+ }
+
+.singin{
+    padding-left: 3cm;
+}
+/* thiết lập style cho thẻ a */
+.pagination a {
+    color: white;
+    float: left;
+    padding:  12px 18px;
+    text-decoration: none;
+  }
+ /* thiết lập style cho class active */
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: red;
+    /*Thiết kế hình tròn với CSS*/
+    border-radius: 50%;
+  }
+ /* thêm màu nền khi người dùng hover vào class không active */
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    /*Thiết kế hình tròn với CSS*/
+    border-radius: 50%;
+  }
+  .pagination {
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    margin-left: auto  ;
+    margin-right: auto;
+    padding-top: 2cm;
+  }
