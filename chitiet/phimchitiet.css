@@ -1,0 +1,85 @@
+:root {
+  background: #1a1a1a;
+  margin: 0;
+  font-family: Arial, Tahoma;
+
+  color: #dcdcdc;
+}
+
+h1 {
+  color: red;
+
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+  top: 25px;
+  bottom: 25px;
+}
+
+.titleContain {
+  background-color: black;
+  width: 100%;
+  border: solid black 2px;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  line-height: 30px;
+}
+
+dt {
+  grid-column-start: 1;
+  color: white;
+}
+
+dd {
+  grid-column-start: 2;
+  color: red;
+}
+
+.pos1 #thethongtinphim {
+  top: 15px;
+  right: 10px;
+  width: auto;
+  background: #252525;
+  border-radius: 16px;
+  padding: 15px;
+  grid-column-start: 2;
+}
+.imgPhim {
+  grid-column-start: 1;
+}
+.pos1 {
+  width: 100%;
+  max-height: fit-content;
+  background-color: black;
+  grid-template-columns: 70% 30%;
+  display: grid;
+  height: min-content;
+}
+.pos1 .imgPhim img {
+  width: 100%;
+  height: 500px;
+  object-fit: scale-down;
+}
+
+.review {
+  display: block;
+  background-color: yellowgreen;
+}
+.listRelated li {
+  display: inline-flex;
+}
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
