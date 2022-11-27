@@ -8,10 +8,13 @@ function selectItem(e) {
   // Add border to current tab
   this.classList.add("tab-border");
   // Grab content item from DOM
+  removeContent();
+  console.log(this.id);
+}
+
+function removeContent() {
   const tabContentItem = document.querySelector(`#${this.id}-content`);
   tabContentItem.classList.add("show");
-
-  console.log(this.id);
 }
 
 function removeBorder() {
