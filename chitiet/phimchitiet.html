@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="phimchitiet.css" />
+    <link rel="stylesheet" href="phimchitiet.js" />
   </head>
   <body>
     <div class="heading body"></div>
@@ -86,6 +87,9 @@
       </div>
 
       <div class="review">
+        <div class="reviewTitle" style="background-color: black">
+          <h2>Gioi thieu ve phim</h2>
+        </div>
         <p>
           Black Panther: Wakanda Forever là phần phim riêng thứ hai của thương
           hiệu điện ảnh về siêu anh hùng Báo Đen thuộc Vũ trụ điện ảnh Marvel.
@@ -104,43 +108,59 @@
         </p>
       </div>
       <div class="related">
-        <div class="heading">
+        <div class="headingRelated">
           <p class="caption">Co the ban quan tam</p>
         </div>
-        <div class="content">
-          <ul class="listRelated" style="display: block; opacity: 1">
-            <li>
-              <div>
-                <a href=""></a>
-                <img src="source/project2.png" alt="anh loi" />
+      </div>
+      <div
+        class="bodySlides"
+        style="font-family: Verdana, sans-serif; margin: 0"
+      >
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="source/project1.png" style="width: 100%" />
+            <div class="text">the korean</div>
+          </div>
 
-                <h3>THE BATMAN</h3>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="source/project2.png" style="width: 100%" />
+            <div class="text">Batman</div>
+          </div>
 
-                <span class="year">year: 2022</span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href=""></a>
-                <img src="source/project1.png" alt="anh loi" />
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="source/tải xuống.jpg" style="width: 100%" />
+            <div class="text">the flash</div>
+          </div>
 
-                <h3>THE Korean</h3>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
 
-                <span class="year">year: 2022</span>
-              </div>
-            </li>
-          </ul>
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
-      <div class="comment">
-        <h2>Leave Us a Comment</h2>
-        <form>
-          <textarea placeholder="Add Your Comment"></textarea>
-          <div class="btn">
-            <input type="submit" value="Comment" />
-            <button id="clear" href="#">Cancel</button>
-          </div>
-        </form>
+      <div class="commentContaien">
+        <div class="comment" style="position: center">
+          <h2>Leave Us a Comment</h2>
+          <form>
+            <textarea
+              class="commentBox"
+              placeholder="Add Your Comment"
+              style="resize: none"
+            ></textarea>
+            <div class="btn">
+              <input type="submit" value="Comment" />
+              <button id="clear" href="#">Cancel</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>
