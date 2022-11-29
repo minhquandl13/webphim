@@ -35,7 +35,10 @@ tbody .phim img{
     /*Thiết kế hình tròn với CSS*/
     border-radius: 50%;
     box-sizing: border-box;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   }
  /* thêm màu nền khi người dùng hover vào class không active */
   .pagination a:hover:not(.active) {
