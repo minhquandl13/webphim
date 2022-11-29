@@ -4,16 +4,13 @@ phim{
 }
 
 tbody .phim td{
-    margin-left: 2cm;
-    margin-right: auto;
-    padding-left: 2cm;
-    padding: 1cm 1cm 1cm 2cm;
+    
    }
 tbody .phim img{
-    padding: 8px;
-    border-radius: 10%;
-    width: 366px;
-    height: 206px;
+    border-radius: 3%;
+    width: 25vw;
+    height: 15vw;
+    margin: 0.5vw;
      }
 .singin{
     padding-left: 3cm;
@@ -30,31 +27,38 @@ tbody .phim img{
 } */
 /* thiết lập style cho thẻ a */
 .pagination a {
-    color: white;
+    color: rgb(91, 139, 186);
     float: left;
-    padding:  12px 18px;
+    padding:  2.5vw 2vw;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.7vw;
+    box-sizing: border-box;
   }
  /* thiết lập style cho class active */
   .pagination a.active {
-    background-color: dodgerblue;
-    color: red;
+    width: auto;
+    height: auto;
+    margin-top: 2vw;
+    background-color: red;
+    color: white;
     /*Thiết kế hình tròn với CSS*/
     border-radius: 50%;
   }
  /* thêm màu nền khi người dùng hover vào class không active */
   .pagination a:hover:not(.active) {
-    background-color: #ddd;
+    width: auto;
+    height: auto;
+    margin-top: 2vw;
+    background-color: rgb(205, 190, 190);
     /*Thiết kế hình tròn với CSS*/
     border-radius: 50%;
 
   }
   .pagination {
-    width: 500px;
-    height: 50px;
+    width: 45vw;
+    height: 4vw;
     text-align: center;
-    margin-left: auto  ;
+    margin-left: auto;
     margin-right: auto;
   
   }
