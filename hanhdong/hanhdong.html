@@ -113,33 +113,33 @@
                     <tbody class="phim">
                       <tr>
                           <td>
-                            <a href="https://fcine.net/" target="_blank"></a>
+                            <a href="https://fcine.net/" target="_blank">
                             <img src="../../assets/images/project9.png" alt="Có thể là hình ảnh của 1 người đàn ông bịt mắt" >
                             </a>
                         </td>
                         <td>
-                            <a href="https://fcine.net/" target="_blank"></a>
+                            <a href="https://fcine.net/" target="_blank">
                           <img src="../../assets/images/project11.png" alt="Có thể là hình ảnh của 1 người với bộ đồ đỏ" >
                           </a>
                         </td>
                         <td>
-                          <a href="https://fcine.net/" target="_blank"></a>
+                          <a href="https://fcine.net/" target="_blank">
                         <img src="../../assets/images/mor_4_1280x720-800-resize.jpg" alt="Có thể là hình ảnh của 1 người với bộ đồ đỏ" >
                         </a>
                       </td>
                       </tr><tr>
                           <td>
-                            <a href="https://fcine.net/" target="_blank"></a>
+                            <a href="https://fcine.net/" target="_blank">
                             <img src="../../assets/images/project12.png" alt="Có thể là hình ảnh của 1 người đàn ông"  >
                             </a>
                           </td>
                           <td>
-                            <a href="https://fcine.net/" target="_blank"></a>
+                            <a href="https://fcine.net/" target="_blank">
                             <img src="../../assets/images/project13.png" alt="Có thể là hình ảnh của 1 người đàn ông cởi trần" >
                             </a>
                           </td>
                           <td>
-                            <a href="https://fcine.net/" target="_blank"></a>
+                            <a href="https://fcine.net/" target="_blank">
                             <img src="../../assets/images/download.jpg" alt="Có thể là hình ảnh của 1 người đàn ông cởi trần" >
                             </a>
                           </td>
@@ -151,9 +151,71 @@
     </tbody>
   </table>
 </phim>
-  <!-- <timkiem>
-    
-  </timkiem> -->
+  <timkiem>
+  <div class="list-group">
+    <button type="button" class="list-group-item list-group-item-action list-group-item-danger active">
+      Lọc phim
+    </button>
+    <button onclick="myFunction()" type="button" class="list-group-item list-group-item-action list-group-item-dark">Năm sản xuất</button>
+    <div id="myDIV" class="list-group" style="display:none">    
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Trước 2016</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">2016 - 2017</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">2018 - 2019</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">2020 - 2021</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Sau 2022</a>
+    </div>
+    <button  onclick="myFunction1()"  type="button" class="list-group-item list-group-item-action list-group-item-dark">Quốc gia</button>
+    <div id="myDIV1" class="list-group" style="display:none">    
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Mỹ</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Trung Quốc</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Hàn Quốc</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Châu Á</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Châu Âu</a>
+    </div>
+    <button onclick="myFunction2()" type="button" class="list-group-item list-group-item-action list-group-item-dark">Lượt xem</button>
+    <div id="myDIV2" class="list-group" style="display:none">    
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Cao &ensp; ->&ensp;Thấp</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Thấp&ensp;->&ensp;Cao</a>
+    </div>
+    <button onclick="myFunction3()" type="button" class="list-group-item list-group-item-action list-group-item-dark">Đánh giá</button>
+    <div id="myDIV3" class="list-group" style="display:none">    
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Trên 4 ★</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Trên 3 ★</a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Trên 2 ★</a>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }}
+      if (y.style.display === "none") {
+        y.style.display = "block";
+      } else {
+        y.style.display = "none";
+      }
+    }
+    function myFunction2() {
+      var z = document.getElementById("myDIV2");
+      if (z.style.display === "none") {
+        z.style.display = "block";
+      } else {
+        z.style.display = "none";
+      }
+    }
+    function myFunction3() {
+      var e = document.getElementById("myDIV3");
+      if (e.style.display === "none") {
+        e.style.display = "block";
+      } else {
+        e.style.display = "none";
+      }
+    }
+    </script>
+  </timkiem>
   <div class="pagination">
     <a  href="#">«</a>
     <a class="active" href="#">1</a>
@@ -206,4 +268,4 @@
 ></script>
 </body>
 
-</html>
+</html> 

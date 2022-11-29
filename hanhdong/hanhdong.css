@@ -15,16 +15,7 @@ tbody .phim img{
 .singin{
     padding-left: 3cm;
 }
-/* timkiem{
-  float: left;
-  color: #ddd;  
-  background-color: blue;
-  background-attachment: fixed;
-  width: 300px;
-  height: 650px;
-  display: block;
 
-} */
 /* thiết lập style cho thẻ a */
 .pagination a {
     color: rgb(91, 139, 186);
@@ -43,6 +34,8 @@ tbody .phim img{
     color: white;
     /*Thiết kế hình tròn với CSS*/
     border-radius: 50%;
+    box-sizing: border-box;
+
   }
  /* thêm màu nền khi người dùng hover vào class không active */
   .pagination a:hover:not(.active) {
@@ -52,6 +45,7 @@ tbody .phim img{
     background-color: rgb(205, 190, 190);
     /*Thiết kế hình tròn với CSS*/
     border-radius: 50%;
+    box-sizing: border-box;
 
   }
   .pagination {
@@ -60,5 +54,6 @@ tbody .phim img{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-  
+    box-sizing: border-box;
+
   }
