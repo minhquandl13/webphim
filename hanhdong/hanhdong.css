@@ -1,8 +1,4 @@
 
-phim{
-  float:left;
-}
-
 tbody .phim td{
     
    }
@@ -12,6 +8,12 @@ tbody .phim img{
     height: 15vw;
     margin: 0.5vw;
      }
+     tbody .phim div{
+      border-radius: 3%;
+      width: 25vw;
+      height: 15vw;
+      margin: 0.5vw;
+       }
 .singin{
     padding-left: 3cm;
 }
@@ -35,10 +37,6 @@ tbody .phim img{
     /*Thiết kế hình tròn với CSS*/
     border-radius: 50%;
     box-sizing: border-box;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
   }
  /* thêm màu nền khi người dùng hover vào class không active */
   .pagination a:hover:not(.active) {
@@ -60,3 +58,13 @@ tbody .phim img{
     box-sizing: border-box;
 
   }
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 46.1875em) {
+  /* Styles */
+
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 46.25em) and (max-device-width: 63.9375em) {
+  /* Styles */
+
+}
