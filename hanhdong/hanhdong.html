@@ -177,7 +177,7 @@
       <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Cao &ensp; ->&ensp;Thấp</a>
       <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Thấp&ensp;->&ensp;Cao</a>
     </div>
-    <button class="but3" onclick="myFunction3()" type="button" class="list-group-item list-group-item-action list-group-item-dark">Đánh giá</button>
+    <button onclick="myFunction3()" type="button" class="list-group-item list-group-item-action list-group-item-dark">Đánh giá</button>
     <div id="myDIV3" class="list-group" style="display:none">    
       <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Trên 4 ★</a>
       <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Trên 3 ★</a>
@@ -207,17 +207,17 @@
       } else {
         z.style.display = "none";
       }
-    // }
-    // function myFunction3() {
-    //   var e = document.getElementById("myDIV3");
-    //   if (e.style.display === "none") {
-    //     e.style.display = "block";
-    //   } else {
-    //     e.style.display = "none";
-    //   }
-    // }
+    }
+    function myFunction3() {
+      var e = document.getElementById("myDIV3");
+      if (e.style.display === "none") {
+        e.style.display = "block";
+      } else {
+        e.style.display = "none";
+      }
+    }
     </script>
-    <script>
+    <!-- <script>
       $(document).ready(function(){
         $(".but3").click(function(){
           $("div").hide();
@@ -226,12 +226,9 @@
           $("div").show();
         });
       });
-      </script>
+      </script> -->
   </timkiem>
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
   <div class="pagination">
     <a  href="#">«</a>
     <a class="active" href="#">1</a>
