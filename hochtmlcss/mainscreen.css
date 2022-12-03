@@ -1,0 +1,18 @@
+.body-movie{
+  font-family: 'Roboto', sans-serif;
+}
+.logo-image {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+  }
+  
+  .nav-link {
+    font-size: 100px !important;
+  }
+  
+  li.nostyle {
+    list-style-type: none;
+  }

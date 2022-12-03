@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+}
+
+.logo-image {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+  }
+  
+  body {
+    background-color: green;
+    margin: 0px;
+  }
+
+  .back{
+    background-color: #151515;
+  }

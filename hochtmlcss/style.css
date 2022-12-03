@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+}
+
+.body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Custom cái khung chứa chức năng */
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+/* Cố định các vị trí trong khung */
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+}
+
+/* Tạo khoảng các giữa các thành phần */
+.logo-container{
+    flex: 1;
+}
+
+/* Custom logo và thêm chức năng */
+.logo{
+    font-family: 'Sen', sans-serif;
+    color: #4dbf00;
+    text-decoration: none;
+    size: 50px;
+}
+
+/* Tạo khoảng các giữa các thành phần */
+.menu-container{
+    flex: 6;
+}
+
+
+.menu-list{
+    text-align: center; 
+    display: flex; /* Cố định các thành phần không bị thay đổi khi thu nhỏ */
+    font-weight: bold;
+   list-style: none;
+}
+
+  .menu-list-item a:link , a:visited {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    min-width: 100px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+  }
+  .menu-list li a:hover , a:active{
+    background-color: #00aeef;
+  }
+
+
+  /* Tạo khoảng các giữa các thành phần */
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Chuyển phần tử xuống cuối khung */
+}
+
+.profile-picture{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+    color: black;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position:  fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.left-menu-icon{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+} 
+
+.container{
+    background-color: #151515;
+    height: calc(100vh - 50px);
+}
+
+.contain-container{
+    margin-left: 50px;
+}
+
+.feartured-content{
+    height: 50vh;
+    padding: 50px;
+}
+
+.feature-title{
+    width: 200px;
+}
+
+.feature-desc{
+    width: 500px;
+    color: lightgray;
+    margin: 30px 0;
+}
+
+.feature-button{
+    background-color: #4dbf00;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.feature-button button:hover{
+    background-color: #4dbf00;
+}
+
