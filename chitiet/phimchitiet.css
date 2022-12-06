@@ -5,6 +5,190 @@
 
   color: #dcdcdc;
 }
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #151515;
+  color: white;
+  margin: auto;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-container {
+  display: inline;
+  flex: 1;
+}
+
+.logo-container a img {
+  display: inline;
+  flex: 6;
+  width: 150px;
+  height: 70px;
+  padding-left: 100px;
+}
+
+.input-container {
+  display: flex;
+  padding-left: 100px;
+  left: 100px;
+}
+
+.menu-container {
+  flex: 6;
+  /* background-color: antiquewhite; */
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-list li {
+  display: inline-block;
+}
+
+.menu-list li a {
+  display: inline-block;
+  align-items: center;
+  color: white;
+  min-width: 110px;
+  text-decoration: none;
+  line-height: 70px;
+  transition: 0.3s background-color;
+}
+
+.menu-list a:hover {
+  background-color: white;
+  color: black;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  flex: 2.4;
+}
+
+.search-container i {
+  color: white;
+}
+
+.input {
+  background-color: #151515;
+  margin-left: 10px;
+  outline: black;
+  padding: 10px 15px 10px 15px;
+  border-radius: 50px;
+  font-size: 15px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profile-container {
+  flex: 2px;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  justify-content: flex-end;
+  /* background-color: aliceblue; */
+  /* position: relative; */
+}
+
+.profile-picture img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-text {
+  margin: 0 10px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+  height: 22px;
+  width: 41px;
+  cursor: pointer;
+  justify-content: space-around;
+  position: relative;
+}
+
+.toggle-icon {
+  color: darkgoldenrod;
+}
+
+.toggle-ball {
+  position: absolute;
+  background-color: black;
+  align-items: center;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  right: 1px;
+  transition: 0.3s all ease-in-out;
+}
+
+.sidebar {
+  width: 100px;
+  height: 100%;
+  background-color: black;
+
+  top: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 70px;
+}
+
+.left-menu-icon {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.container {
+  background-color: #151515;
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+
+.content-container {
+  margin-left: 100px;
+}
+.listTitle li {
+  display: inline-block;
+  color: orange;
+}
+.listTitle {
+  background-color: black;
+}
+.listTitle a {
+  color: red;
+  font: bold;
+}
 
 h1 {
   color: red;
@@ -63,129 +247,209 @@ dd {
   height: 500px;
   object-fit: scale-down;
 }
-
+.review h2 {
+  background-color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 2.5em;
+  color: #ff9601;
+}
 .review {
   display: block;
   background-color: #1a1a1a;
   border: solid black;
+  line-height: 1.5;
 }
 
-button {
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
+.dowload {
+  background-color: #e74c3c;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  position: relative;
+  margin: 30px 5px;
+  padding: 20px 20px 20px 80px;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.dowload::before {
+  content: "\f019";
+  font-family: fontAwesome;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 19px;
+  border-radius: 0 20px 0 0;
+  color: #000;
+  background-color: #fff;
+  opacity: 0.3;
+  padding: 20px;
+  top: 0;
+  left: 0;
+}
+.watchMovie {
+  background-color: #678fed;
+  display: inline-block;
+  position: relative;
+  margin: 30px 5px;
+  padding: 20px 20px 20px 80px;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.watchMovie ::before {
+  content: "\f01d";
+  font-family: fontAwesome;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 19px;
+  border-radius: 0 20px 0 0;
+  color: #000;
+  background-color: #fff;
+  opacity: 0.3;
+  padding: 20px;
+  top: 0;
+  left: 0;
 }
 .commentBox {
   width: 50%;
   height: 150px;
 }
-.mySlides {
-  display: none;
-}
-.mySlides img {
-  vertical-align: middle;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+.button {
   display: inline-block;
-  transition: background-color 0.6s ease;
+  text-align: center;
+  color: white;
+  background-color: #4dbf00;
+  text-decoration: none;
+  width: 120px;
+  border-radius: 10px;
+  line-height: 50px;
+  margin-top: 15px;
 }
 
-.active,
-.dot:hover {
-  background-color: #717171;
+.button:hover {
+  background-color: tomato;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.arrow-left {
+  font-size: 50px;
+  position: absolute;
+  top: 250px;
+  left: 30px;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+.arrow-right {
+  font-size: 50px;
+  position: absolute;
+  top: 250px;
+  right: 30px;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
+.movie-list-container {
+  padding: 20px;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  transform: translateX(0);
+  transition: all 1s ease;
+}
+
+.movie-list-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.movie-list-item {
+  margin-right: 30px;
+  padding: 1px;
+  position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-image {
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+.movie-list-item-image {
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.movie-list-item-title {
+  background-color: #333;
+  padding: 0 10px;
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc {
+  background-color: #333;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  width: 230px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-button {
+  padding: 10px;
+  background-color: #4dbf00;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.arrow {
+  font-size: 120px;
+  position: absolute;
+  top: 100px;
+  right: 90px;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.movie-list-title.active {
+  color: black;
+}
+@media only screen and (max-width: 940px) {
+  .menu-container {
+    display: none;
   }
 }
